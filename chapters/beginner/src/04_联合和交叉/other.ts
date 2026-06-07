@@ -1,8 +1,8 @@
-function getInputSomething() {
+function getInputSomething(): string {
   return "1341534";
 }
 
-function loadFromDatabase(id) {
+function loadFromDatabase(id: number): void | Record<string, any> {
   if (Number.isNaN(id)) {
     return;
   }
@@ -15,8 +15,9 @@ function loadFromDatabase(id) {
   };
 }
 
-const s = getInputSomething();
-const id = Number.parseInt(s);
+let id: string | number = getInputSomething(); // 联合类型
+id = Number.parseInt(id);
 
+// @ts-expect-error: 忽略
 const { name, age } = loadFromDatabase(id);
 console.log(name, age);

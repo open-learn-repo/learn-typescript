@@ -27,7 +27,7 @@
 
     // * 类型声明文件
     // 声明文件目录，默认时node_modules/@types
-    "typeRoots": ["node_modules/@types", "types"]
+    // "typeRoots": ["node_modules/@types", "types"]
     // 从 typeRoots 中选择要包含的特定类型包，其他包将被忽略。若设为空数组 []，则 禁用自动加载
     // "types": []
   }

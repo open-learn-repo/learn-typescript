@@ -18,5 +18,6 @@ function loadFromDatabase(id: number): void | Record<string, any> {
 const s = getInputSomething();
 const id = Number.parseInt(s);
 
+// @ts-expect-error: 忽略
 const { name, age } = loadFromDatabase(id);
 console.log(name, age);
