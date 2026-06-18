@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "debugger javascript/typescript",
+      "name": "debugger javascript",
       "request": "launch",
       // 调试文件路径
       "program": "${file}",

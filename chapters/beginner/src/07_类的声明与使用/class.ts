@@ -52,7 +52,10 @@ class Modern {
   }
 
   // class static block, TS 4.4, ES2022
-  static {}
+  static {
+    const m = "这是一个句子";
+    console.log(m);
+  }
 
   // auto-accessor, TS 4.9, ES proposal stage 1
   accessor x = 100;

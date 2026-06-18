@@ -39,13 +39,12 @@
     // 装饰器的声明触发某些类型的元数据的实验性支持
     "emitDecoratorMetadata": true,
     // 使用现代类字段定义
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    // 开启源映射
+    "sourceMap": true
   },
   // 指定一个排除列表（include的反向操作）
-  "exclude": [
-    "node_modules",
-    "build"
-  ],
+  "exclude": ["node_modules", "build"],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"
