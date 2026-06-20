@@ -1,15 +1,17 @@
+packages:
+  - chapters/*
+  - packages/*
+  - playground/*
+
+catalog:
+  '@antfu/eslint-config': ^7.2.0
+  '@types/node': ^25.3.0
+  eslint: ^9.39.2
+  tsx: ^4.22.4
+  typescript: 5.8.3
+
 catalogMode: prefer
 
 shellEmulator: true
 
 trustPolicy: no-downgrade
-packages:
-  - chapters/*
-  - packages/*
-  - playground/*
-catalog:
-  "@antfu/eslint-config": ^7.2.0
-  "@types/node": ^25.3.0
-  eslint: ^9.39.2
-  ts-node: 10.9.2
-  typescript: 5.8.3

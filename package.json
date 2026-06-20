@@ -28,7 +28,7 @@
     "@antfu/eslint-config": "catalog:",
     "@types/node": "catalog:",
     "eslint": "catalog:",
-    "ts-node": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:"
   }
 }
