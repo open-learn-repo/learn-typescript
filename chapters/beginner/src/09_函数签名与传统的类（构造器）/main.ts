@@ -42,7 +42,7 @@ type Fn2 = {
   // new (): void;
   a?: string;
 }
-const fn: Fn = () => {}; // 箭头函数不能被构造！
+const fn: Fn = (...args: any[]): any => {}; // 箭头函数不能被构造！
 const fn2: Fn2 = function () {};
 
 // * 类示例: ES6中的类
