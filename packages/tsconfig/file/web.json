@@ -7,13 +7,7 @@
     // 生成代码的模板标准
     "module": "ESNext",
     // TS 需要引入的库，即声明文件，es5默认引用了dom、es5、scripthost,如需要使用es的高级版本特性，通常需要配置，如es8的数组新特性需要引入"ES2019.Array"
-    "lib": [
-      "ESNext",
-      "DOM",
-      "ScriptHost",
-      "ES2019.Array",
-      "WebWorker"
-    ],
+    "lib": ["ESNext", "DOM", "ScriptHost", "ES2019.Array", "WebWorker"],
     // * 其他编译配置
     // 控制 JSX 的编译模式, 如：preserve，则保留 JSX 语法不转换，生成 .jsx 或 .tsx 文件等等
     "jsx": "preserve",
@@ -24,6 +18,12 @@
     // eslint-disable-next-line style/max-len
     // 控制 TypeScript 如何确定文件是否为 脚本或模块。 "auto"（默认）、"legacy"（import 和 export 语句来确定文件是否为模块）、"force"（确保每个非声明文件都被视为模块）。
     "moduleDetection": "force",
+    // 允许 TypeScript 文件通过类似 TypeScript 的扩展程序相互导入.ts,.mts或者.tsx
+    "allowImportingTsExtensions": true,
+    // 编译不输出 js 文件
+    "noEmit": true,
+    // 允许合成默认导入, 如: import React from "react";
+    "allowSyntheticDefaultImports": true
 
     // * 类型声明文件
     // 声明文件目录，默认时node_modules/@types
