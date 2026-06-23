@@ -1,7 +1,7 @@
+/* eslint-disable ts/no-unsafe-declaration-merging */
 /* eslint-disable ts/method-signature-style */
 /* eslint-disable ts/explicit-function-return-type */
 // 三种重名的处理策略: 合并, 重载, 覆盖
-
 // 合并
 // 合并接口
 interface IMyObject {
@@ -13,6 +13,21 @@ interface IMyObject {
   f(b: number): void;
   y: number;
 }
+
+type IMyObjectType = Omit<IMyObject, never>;
+// 合并类（同名接口和同名类）
+interface DefineClass {
+  x: string;
+}
+
+class DefineClass {
+  y!: number;
+  foo() {
+    // ...
+  }
+}
+
+type DefineCLassType = Omit<DefineClass, never>;
 
 // 重载, 普通函数是可以被重载的, 类的方法是能够重载的, 接口的方法也是可以重载的
 function foo(a: number): void;
