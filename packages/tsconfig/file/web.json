@@ -5,7 +5,7 @@
     // 编译语言的版本
     "target": "ESNext",
     // 生成代码的模板标准
-    "module": "ESNext",
+    "module": "NodeNext",
     // TS 需要引入的库，即声明文件，es5默认引用了dom、es5、scripthost,如需要使用es的高级版本特性，通常需要配置，如es8的数组新特性需要引入"ES2019.Array"
     "lib": ["ESNext", "DOM", "ScriptHost", "ES2019.Array", "WebWorker"],
     // * 其他编译配置
