@@ -24,13 +24,13 @@
     "noUnusedParameters": false,
     // 防止switch语句贯穿(即如果没有break语句后面不会执行)
     "noFallthroughCasesInSwitch": true,
-    // 在代码中注入'use strict'
+    // 在代码中注入'use strict'moduleResolution
     "alwaysStrict": true,
     // 是否检测JavaScript语法
     "checkJs": false,
     // * 模块解析策略
     // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     // 允许导入JSON
     "resolveJsonModule": true,
     // * 实验性特性

@@ -13,8 +13,9 @@
     "jsx": "preserve",
     // 指定 JSX 的生成函数，如：h，则使用 h 作为创建函数
     "jsxFactory": "React.createElement",
-    // 用于控制迭代行为兼容性的编译选项。它的作用是在将代码编译到较旧的 JavaScript 版本（如 ES5/ES3）时，更精确地模拟现代 JavaScript（ES6+）的迭代协议。
-    "downlevelIteration": true,
+    // eslint-disable-next-line style/max-len
+    // ! 已弃用 用于控制迭代行为兼容性的编译选项。它的作用是在将代码编译到较旧的 JavaScript 版本（如 ES5/ES3）时，更精确地模拟现代 JavaScript（ES6+）的迭代协议。
+    // "downlevelIteration": false,
     // eslint-disable-next-line style/max-len
     // 控制 TypeScript 如何确定文件是否为 脚本或模块。 "auto"（默认）、"legacy"（import 和 export 语句来确定文件是否为模块）、"force"（确保每个非声明文件都被视为模块）。
     "moduleDetection": "force",
